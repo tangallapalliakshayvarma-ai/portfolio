@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tangallapalli Akshay Varma — Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-slate-200">
+
+    <nav class="fixed w-full z-50 bg-darker/80 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-bold gradient-text">Akshay Varma</a>
+
+            <button id="menu-toggle" class="md:hidden text-slate-200 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <div id="nav-links" class="hidden md:flex space-x-6">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a class="block py-2 nav-link active" href="#home">Home</a>
+            <a class="block py-2 nav-link" href="#about">About</a>
+            <a class="block py-2 nav-link" href="#education">Education</a>
+            <a class="block py-2 nav-link" href="#skills">Skills</a>
+            <a class="block py-2 nav-link" href="#projects">Projects</a>
+            <a class="block py-2 nav-link" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen pt-20 flex items-center">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Hi — I'm <span class="gradient-text">Akshay</span></h1>
+                <p class="text-lg text-slate-300 max-w-xl mb-6">
+                    Cybersecurity student & full-stack developer. I build practical projects using Python, Java, JavaScript and apply machine learning for real-world problems.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="btn-primary rounded-full px-6 py-3 inline-flex items-center">Hire Me</a>
+                    <a href="#projects" class="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition">View Work</a>
+                </div>
+                <div class="flex gap-3 mt-6">
+                    <a href="https://github.com/tangallapalliakshayvarma-ai" target="_blank" class="social-icon bg-slate-800 w-10 h-10 rounded-full flex items-center justify-center"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tangallapalli-akshay-varma-76943a216" target="_blank" class="social-icon bg-slate-800 w-10 h-10 rounded-full flex items-center justify-center"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
+                    <img src="Images/profile-placeholder.jpeg" alt="Akshay profile" class="relative w-full h-full object-cover rounded-full border-4 border-slate-800 floating" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">About <span class="gradient-text">Me</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 items-center">
+                <div class="md:col-span-1 flex justify-center">
+                    <img src="Images/about-placeholder.jpeg" alt="about" class="rounded-2xl border-4 border-slate-800 object-cover w-64 h-64" />
+                </div>
+
+                <div class="md:col-span-2">
+                    <p class="text-slate-400 mb-6">
+                        I'm <strong>Tangallapalli Akshay Varma</strong>, pursuing B.Tech in Computer Science (Cybersecurity). I enjoy building applications, data-driven solutions and studying cyber threat detection techniques.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <div class="font-medium">Name</div>
+                            <div class="text-slate-300">Tangallapalli Akshay Varma</div>
+                        </div>
+                        <div>
+                            <div class="font-medium">Email</div>
+                            <div class="text-slate-300">tangallapalliakshayvarma@gmail.com</div>
+                        </div>
+                        <div>
+                            <div class="font-medium">Phone</div>
+                            <div class="text-slate-300">+91 6305318562</div>
+                        </div>
+                        <div>
+                            <div class="font-medium">Location</div>
+                            <div class="text-slate-300">Hyderabad, TG</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="resume.pdf" class="btn-primary px-6 py-3 rounded-full">Download CV</a>
+                        <a href="#contact" class="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">My <span class="gradient-text">Education</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+            </div>
+
+            <div class="relative max-w-3xl mx-auto">
+                <div class="absolute left-1/2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
+
+                <div class="mb-16 flex justify-between items-center w-full timeline-item">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="order-1 w-5/12 px-6 py-4 bg-slate-800 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-bold mb-1">B.Tech — Computer Science (Cybersecurity)</h4>
+                        <p class="text-sm text-slate-400 mb-2">Malla Reddy Engineering College • Hyderabad • 2023–2026 (Expected)</p>
+                        <p class="text-slate-300">CGPA: 8.53 </p>
+                    </div>
+                </div>
+                
+                <div class="mb-16 flex justify-between items-center w-full timeline-item">
+                    <div class="order-1 w-5/12 px-6 py-4 bg-slate-800 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-bold mb-1">Diploma — Electrical & Electronics Engineering</h4>
+                        <p class="text-sm text-slate-400 mb-2">Singareni Collieries Polytechnic College • Mancherial • 2021–2023</p>
+                        <p class="text-slate-300">CGPA: 9.45 </p>
+                    </div>
+                    <div class="order-1 w-5/12"></div>
+                </div>
+                
+                <div class="mb-8 flex justify-between items-center w-full timeline-item">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="order-1 w-5/12 px-6 py-4 bg-slate-800 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-bold mb-1">SSC</h4>
+                        <p class="text-sm text-slate-400 mb-2">Artifical Intelligence English Medium School • Mancherial • 2020 </p>
+                        <p class="text-slate-300">GPA: 10.0 </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">My <span class="gradient-text">Skills</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Technical Skills</h3>
+
+                    <div class="space-y-5">
+                      <div>
+                            <div class="flex justify-between mb-2"><span>Python</span><span>95%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="95"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>Java</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="95"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>HTML / CSS</span><span>95%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="95"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>JavaScript</span><span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="90"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>React</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="85"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>Node.js</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="80"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>Excel</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Professional Skills</h3>
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-2"><span>Communication</span><span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="90"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>Teamwork</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="85"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>Problem Solving</span><span>95%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="95"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span>Creativity</span><span>75%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-target="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14">
+                <h3 class="text-2xl font-semibold text-center mb-6">Tools & <span class="gradient-text">Technologies</span></h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i><span>HTML5</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i><span>CSS3</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-js text-4xl text-yellow-400 mb-2"></i><span>JavaScript</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-react text-4xl text-sky-400 mb-2"></i><span>React</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-node-js text-4xl text-green-500 mb-2"></i><span>Node.js</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fas fa-database text-4xl text-indigo-400 mb-2"></i><span>MongoDB</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fas fa-database text-4xl text-indigo-400 mb-2"></i><span>My SQL</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-git-alt text-4xl text-red-500 mb-2"></i><span>Git</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-github text-4xl text-slate-300 mb-2"></i><span>GitHub</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fas fa-terminal text-4xl text-gray-300 mb-2"></i><span>VS Code</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fab fa-linux text-4xl mb-2"></i><span>Linux</span></div>
+                    <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg card-hover"><i class="fas fa-file-excel text-4xl text-green-600 mb-2"></i><span>Excel</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">My <span class="gradient-text">Projects</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="project-card rounded-xl overflow-hidden card-hover">
+                    <img src="Images/project1.png" alt="Cyber Threat Detection" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cyber Threat Detection</h3>
+                        <p class="text-slate-400 mb-3">Detecting anomalies & malicious patterns using ML models and feature engineering.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">Python</span><span class="tag">ML</span><span class="tag">Scikit-learn</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card rounded-xl overflow-hidden card-hover">
+                    <img src="Images/project2.png" alt="Alzheimer's Detection" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Early Alzheimer's Detection — Ensemble ML</h3>
+                        <p class="text-slate-400 mb-3">Voting-based ensemble using cognitive features to detect early-stage Alzheimer's.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">Python</span><span class="tag">ML</span><span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card rounded-xl overflow-hidden card-hover">
+                    <img src="Images/project3.png" alt="ToDo App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">ToDo App</h3>
+                        <p class="text-slate-400 mb-3">Interactive task manager with local storage, filters and drag & drop (planned).</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">HTML</span><span class="tag">JS</span><span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card rounded-xl overflow-hidden card-hover">
+                    <img src="Images/project4.png" alt="Weather App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Weather App</h3>
+                        <p class="text-slate-400 mb-3">Real-time weather data fetched via public APIs, with location detection.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">CSS3</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card rounded-xl overflow-hidden card-hover">
+                    <img src="Images/project5.png" alt="Churn Prediction" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Churn Prediction</h3>
+                        <p class="text-slate-400 mb-3">Customer churn classification with model explanations and dashboard.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card rounded-xl overflow-hidden card-hover">
+                    <img src="Images/project6.png" alt="Portfolio Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+                        <p class="text-slate-400 mb-3">This portfolio — built with semantic HTML, Tailwind styles and simple JS.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">HTML</span><span class="tag">TailwindCSS</span><span class="tag">JS</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="text-slate-400 mb-6">Email: <strong>tangallapalliakshayvarma@gmail.com</strong> • Phone: <strong>+91 6305318562</strong></p>
+            <a href="mailto:tangallapalliakshayvarma@gmail.com" class="btn-primary px-6 py-3 rounded-full inline-block">Send Email</a>
+        </div>
+    </section>
+
+    <footer class="bg-darker py-8 text-center">
+        <div class="container mx-auto px-6 text-slate-400">
+            <p>© 2025 Tangallapalli Akshay Varma — Built with ❤️ & ☕</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary rounded-full hidden items-center justify-center text-white shadow-lg">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
